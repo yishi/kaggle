@@ -16,6 +16,19 @@ Firstly, I add features *year month hour* and used ensemble algorithms of extra 
 
 On top of this, I renew features with *rush_hour_working*, because the register users might go to work by bike and focus on rush hour such as 7:00 8:00 17:00 18:00 19:00; I also add feature *adverse_rush_hour* to descript the behavior of casual users who only have one peak from 9:00 to 20:00, the value of root mean squared logarithmic error in test decrease from 0.47448 to *0.44763*.
 
+After I checked many messages from kaggle discuss group, many people suggested that variable 'count' 'registered' 'casual' are skewed distribution, so if we use *the log value* of those variables, the distribution will be more normal.
+I tried this method, the value of root mean squared logarithmic error in test by extra trees regressor decrease from 0.44763 to 0.41868, if I predict 'registered' and 'casual', then sum them up to get 'count', the value of root mean squared logarithmic error in test will be *0.41573*.
+
+At the same time, random forest regressor is not well as extra trees, the best value of root mean squared logarithmic error in test is 0.43005. But after I add other features, introduced by this [ariticle]( https://www.analyticsvidhya.com/blog/2015/06/solution-kaggle-competition-bike-sharing-demand/), the value of root mean squared logarithmic error in test by random forest regressor is *0.40104*. 
+
+More detail you could check the table below.
+|Algorithms|Python|R|
+|---|---|---|
+|Rrandom forest (ntree = 100) +log +(predict casual + register)|0.43148|0.43005|
+|random forest + top5 + adverse_rush_hour + rush_hour|0.40389|0.40104|
+|extremely randomized trees(ntree = 100) +log +(predict casual + register)|0.41573|0.43255|
+|extremely randomized trees + top5 + adverse_rush_hour + rush_hour|0.4134|0.41237|
+
 
 
 - **[Competition Series 2: Walmart store sales forecasting](https://github.com/yishi/kaggle/blob/master/competition_series_2_walmart.R)**
