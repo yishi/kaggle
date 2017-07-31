@@ -22,6 +22,7 @@ I tried this method, the value of root mean squared logarithmic error in test by
 At the same time, random forest regressor is not well as extra trees, the best value of root mean squared logarithmic error in test is 0.43005. But after I add other features, introduced by this [ariticle]( https://www.analyticsvidhya.com/blog/2015/06/solution-kaggle-competition-bike-sharing-demand/), the value of root mean squared logarithmic error in test by random forest regressor is *0.40104*. 
 
 More detail you could check the table below.
+
 |Algorithms|Python|R|
 |---|---|---|
 |Rrandom forest (ntree = 100) +log +(predict casual + register)|0.43148|0.43005|
