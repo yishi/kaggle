@@ -8,7 +8,9 @@ I should do competitions earlier, so *delay* is actually a bad habit.
 
 
 
-- **[Competition Series 1: Forecast use of a city bike share system](http://nbviewer.jupyter.org/github/yishi/kaggle/blob/master/competition_series_1_bike.ipynb)**
+- Python code:**[Competition Series 1: Forecast use of a city bike share system](http://nbviewer.jupyter.org/github/yishi/kaggle/blob/master/competition_series_1_bike.ipynb)**
+
+- R code:**[Competition Series 1: Forecast use of a city bike share system](https://github.com/yishi/kaggle/blob/master/competition_series_1_bike.R)**
 
 Data come from [kaggle](https://www.kaggle.com/c/bike-sharing-demand).
 
@@ -32,7 +34,7 @@ More detail you could check the table below.
 
 
 
-- **[Competition Series 2: Walmart store sales forecasting](https://github.com/yishi/kaggle/blob/master/competition_series_2_walmart.R)**
+- R code:**[Competition Series 2: Walmart store sales forecasting](https://github.com/yishi/kaggle/blob/master/competition_series_2_walmart.R)**
 
 Data come from [kaggle](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting).
 
