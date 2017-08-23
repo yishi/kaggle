@@ -44,3 +44,11 @@ In addition, the preprocess of singular value decomposition and the postprocess 
 
 2017-7-7
 
+
+- **[Python code: Competition Series 1: Forecast use of a city bike share system by ensemble stack method](http://nbviewer.jupyter.org/github/yishi/kaggle/blob/master/competition_series_1_bike_v2.ipynb)**
+
+Recently, I find out [this article](http://bit.ly/1GQtJDS) when I search the method of ensemble. This article is great, it explain the reason why some algorithms ensemble will get better accuracy, it also refers to simple ensemble methods such as vote, weighted vote, average, weighted average, rank average, rank weighted average.
+
+The ensemble method of stack is amazing, I try to work out stack method in python code, and in R you could install the package of caretEnsemble, then use the function caretStack to use stack method directly.
+
+2017-8-23
